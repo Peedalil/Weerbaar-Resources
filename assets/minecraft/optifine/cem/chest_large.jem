@@ -1,0 +1,128 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [192, 192],
+	"models": [
+		{
+			"part": "base_left",
+			"id": "base_left",
+			"invertAxis": "xy",
+			"translate": [-16, 0, -8],
+			"rotate": [-180, 0, 0],
+			"submodels": [
+				{
+					"id": "lod_base",
+					"invertAxis": "xy",
+					"translate": [16, 0, 8],
+					"boxes": [
+						{"coordinates": [-31, -10, 1, 30, 10, 14], "textureOffset": [8, 167]},
+						{"coordinates": [-31, -14, 1, 30, 5, 14], "textureOffset": [97, 172]},
+						{"coordinates": [-17, -11, 15, 2, 4, 1], "textureOffset": [101, 180]}
+					]
+				},
+				{
+					"id": "normal_render",
+					"invertAxis": "xy",
+					"translate": [16, 0, 8],
+					"boxes": [
+						{"coordinates": [-31, -10, 1, 30, 10, 14], "textureOffset": [8, 167]},
+						{
+							"coordinates": [-29, -10, 13, 26, 9, -10],
+							"uvNorth": [83, 169, 109, 178],
+							"uvEast": [93, 169, 83, 178],
+							"uvSouth": [83, 169, 109, 178],
+							"uvWest": [109, 169, 99, 178],
+							"uvUp": [109, 169, 83, 179]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"this.rx": 0,
+					"lod_base.visible": "if(lid_left.rx == 0, 1,0) > 0",
+					"normal_render.visible": "if(lid_left.rx == 0, 0,1) > 0"
+				}
+			]
+		},
+		{
+			"part": "base_right",
+			"id": "base_right",
+			"invertAxis": "xy",
+			"translate": [0, 0, -8],
+			"rotate": [-180, 0, 0],
+			"animations": [
+				{
+					"this.rx": 0
+				}
+			]
+		},
+		{
+			"part": "lid_left",
+			"id": "lid_left",
+			"invertAxis": "xy",
+			"translate": [-16, -9, -7],
+			"rotate": [-180, 0, 0],
+			"submodels": [
+				{
+					"id": "bone",
+					"invertAxis": "xy",
+					"translate": [16, 27, 5],
+					"boxes": [
+						{"coordinates": [-31, -23, 2, 30, 5, 14], "textureOffset": [97, 172]},
+						{"coordinates": [-17, -20, 16, 2, 4, 1], "textureOffset": [101, 180]},
+						{
+							"coordinates": [-29, -22, 14, 26, 4, -10],
+							"uvNorth": [83, 169, 109, 173],
+							"uvEast": [83, 169, 93, 173],
+							"uvSouth": [83, 169, 109, 173],
+							"uvWest": [83, 169, 93, 173],
+							"uvDown": [83, 169, 109, 179]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"this.rx": 0,
+					"this.visible": "lid_left.rx != 0"
+				}
+			]
+		},
+		{
+			"part": "lid_right",
+			"id": "lid_right",
+			"invertAxis": "xy",
+			"translate": [0, -9, -7],
+			"rotate": [-180, 0, 0],
+			"animations": [
+				{
+					"this.rx": 0
+				}
+			]
+		},
+		{
+			"part": "knob_left",
+			"id": "knob_left",
+			"invertAxis": "xy",
+			"translate": [-16, -9, -7],
+			"rotate": [-180, 0, 0],
+			"animations": [
+				{
+					"this.rx": 0
+				}
+			]
+		},
+		{
+			"part": "knob_right",
+			"id": "knob_right",
+			"invertAxis": "xy",
+			"translate": [0, -9, -7],
+			"rotate": [-180, 0, 0],
+			"animations": [
+				{
+					"this.rx": 0
+				}
+			]
+		}
+	]
+}
