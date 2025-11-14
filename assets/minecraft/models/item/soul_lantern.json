@@ -4,8 +4,8 @@
 	"parent": "minecraft:block/template_lantern",
 	"texture_size": [16, 48],
 	"textures": {
-		"0": "block/soul_lantern",
-		"particle": "block/soul_lantern"
+		"0": "item/soul_lantern",
+		"particle": "item/soul_lantern"
 	},
 	"elements": [
 		{
