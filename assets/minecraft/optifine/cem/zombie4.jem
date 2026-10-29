@@ -9,7 +9,15 @@
 			"invertAxis": "xy",
 			"translate": [0, -24, 0],
 			"boxes": [
-				{"coordinates": [-4, 24, -4, 8, 8, 8], "textureOffset": [0, 0]}
+				{
+					"coordinates": [-3.5, 24, -3.5, 7, 8, 7],
+					"uvNorth": [8, 8, 16, 16],
+					"uvEast": [0, 8, 8, 16],
+					"uvSouth": [24, 8, 32, 16],
+					"uvWest": [16, 8, 24, 16],
+					"uvUp": [16, 8, 8, 0],
+					"uvDown": [24, 0, 16, 8]
+				}
 			],
 			"submodels": [
 				{
@@ -17,7 +25,16 @@
 					"invertAxis": "xy",
 					"translate": [0, 24, 0],
 					"boxes": [
-						{"coordinates": [-4, 0, -4, 8, 8, 8], "textureOffset": [32, 0], "sizeAdd": 0.25}
+						{
+							"coordinates": [-3.5, 0, -3.5, 7, 8, 7],
+							"uvNorth": [40, 8, 48, 16],
+							"uvEast": [32, 8, 40, 16],
+							"uvSouth": [56, 8, 64, 16],
+							"uvWest": [48, 8, 56, 16],
+							"uvUp": [48, 8, 40, 0],
+							"uvDown": [56, 0, 48, 8],
+							"sizeAdd": 0.25
+						}
 					]
 				}
 			]
@@ -34,15 +51,32 @@
 			"invertAxis": "xy",
 			"translate": [0, -24, 0],
 			"boxes": [
-				{"coordinates": [-4, 12, -2, 8, 12, 4], "textureOffset": [16, 16]}
+				{
+					"coordinates": [-4, 12, -1.5, 8, 12, 3],
+					"uvNorth": [20, 20, 28, 32],
+					"uvEast": [16, 20, 20, 32],
+					"uvSouth": [32, 20, 40, 32],
+					"uvWest": [28, 20, 32, 32],
+					"uvUp": [28, 20, 20, 16],
+					"uvDown": [36, 16, 28, 20]
+				}
 			],
 			"submodels": [
 				{
 					"id": "body_layer",
 					"invertAxis": "xy",
-					"translate": [0, 0, 0],
+					"translate": [0, 0, 0.5],
 					"boxes": [
-						{"coordinates": [-4, 12, -2, 8, 12, 4], "textureOffset": [16, 32], "sizeAdd": 0.25}
+						{
+							"coordinates": [-4, 12, -2, 8, 12, 3],
+							"uvNorth": [20, 36, 28, 48],
+							"uvEast": [16, 36, 20, 48],
+							"uvSouth": [32, 36, 40, 48],
+							"uvWest": [28, 36, 32, 48],
+							"uvUp": [28, 36, 20, 32],
+							"uvDown": [36, 32, 28, 36],
+							"sizeAdd": 0.25
+						}
 					]
 				}
 			]
@@ -58,18 +92,36 @@
 					"id": "left_arm_base",
 					"invertAxis": "xy",
 					"mirrorTexture": "u",
-					"translate": [-6, 22, 0],
+					"translate": [-4.9, 22, 0.5],
 					"boxes": [
-						{"coordinates": [-2, -10, -2, 4, 12, 4], "textureOffset": [32, 48]}
+						{
+							"coordinates": [-2, -10, -2, 3, 12, 3],
+							"uvNorth": [40, 52, 36, 64],
+							"uvEast": [44, 52, 40, 64],
+							"uvSouth": [48, 52, 44, 64],
+							"uvWest": [36, 52, 32, 64],
+							"uvUp": [36, 52, 40, 48],
+							"uvDown": [40, 48, 44, 52],
+							"sizeAdd": -0.1
+						}
 					]
 				},
 				{
 					"id": "left_arm_layer",
 					"invertAxis": "xy",
 					"mirrorTexture": "u",
-					"translate": [-6, 22, 0],
+					"translate": [-5, 22, 0],
 					"boxes": [
-						{"coordinates": [-2, -10, -2, 4, 12, 4], "textureOffset": [48, 48], "sizeAdd": 0.25}
+						{
+							"coordinates": [-2, -10, -2, 3, 12, 3],
+							"uvNorth": [56, 52, 52, 64],
+							"uvEast": [60, 52, 56, 64],
+							"uvSouth": [64, 52, 60, 64],
+							"uvWest": [52, 52, 48, 64],
+							"uvUp": [52, 52, 56, 48],
+							"uvDown": [56, 48, 60, 52],
+							"sizeAdd": 0.25
+						}
 					]
 				}
 			]
@@ -83,9 +135,18 @@
 				{
 					"id": "right_arm_base",
 					"invertAxis": "xy",
-					"translate": [0, 0, 0],
+					"translate": [-0.1, 0, 0.5],
 					"boxes": [
-						{"coordinates": [4, 12, -2, 4, 12, 4], "textureOffset": [40, 16]}
+						{
+							"coordinates": [4, 12, -2, 3, 12, 3],
+							"uvNorth": [44, 20, 48, 32],
+							"uvEast": [40, 20, 44, 32],
+							"uvSouth": [52, 20, 56, 32],
+							"uvWest": [48, 20, 52, 32],
+							"uvUp": [48, 20, 44, 16],
+							"uvDown": [52, 16, 48, 20],
+							"sizeAdd": -0.1
+						}
 					]
 				},
 				{
@@ -93,7 +154,16 @@
 					"invertAxis": "xy",
 					"translate": [5, 22, 0],
 					"boxes": [
-						{"coordinates": [-1, -10, -2, 4, 12, 4], "textureOffset": [40, 32], "sizeAdd": 0.25}
+						{
+							"coordinates": [-1, -10, -2, 3, 12, 3],
+							"uvNorth": [44, 36, 48, 48],
+							"uvEast": [40, 36, 44, 48],
+							"uvSouth": [52, 36, 56, 48],
+							"uvWest": [48, 36, 52, 48],
+							"uvUp": [48, 36, 44, 32],
+							"uvDown": [52, 32, 48, 36],
+							"sizeAdd": 0.25
+						}
 					]
 				}
 			]
@@ -105,16 +175,33 @@
 			"mirrorTexture": "u",
 			"translate": [1.9, -12, 0],
 			"boxes": [
-				{"coordinates": [-4, 0, -2, 4, 12, 4], "textureOffset": [16, 48]}
+				{
+					"coordinates": [-4, 0, -1.5, 4, 12, 3],
+					"uvNorth": [24, 52, 20, 64],
+					"uvEast": [28, 52, 24, 64],
+					"uvSouth": [32, 52, 28, 64],
+					"uvWest": [20, 52, 16, 64],
+					"uvUp": [20, 52, 24, 48],
+					"uvDown": [24, 48, 28, 52]
+				}
 			],
 			"submodels": [
 				{
 					"id": "left_leg_layer",
 					"invertAxis": "xy",
 					"mirrorTexture": "u",
-					"translate": [-1.9, 12, 0],
+					"translate": [-1.9, 12, 0.5],
 					"boxes": [
-						{"coordinates": [-2.1, -12, -2, 4, 12, 4], "textureOffset": [0, 48], "sizeAdd": 0.25}
+						{
+							"coordinates": [-2.1, -12, -2, 4, 12, 3],
+							"uvNorth": [8, 52, 4, 64],
+							"uvEast": [12, 52, 8, 64],
+							"uvSouth": [16, 52, 12, 64],
+							"uvWest": [4, 52, 0, 64],
+							"uvUp": [4, 52, 8, 48],
+							"uvDown": [8, 48, 12, 52],
+							"sizeAdd": 0.25
+						}
 					]
 				}
 			]
@@ -125,15 +212,32 @@
 			"invertAxis": "xy",
 			"translate": [-1.9, -12, 0],
 			"boxes": [
-				{"coordinates": [0, 0, -2, 4, 12, 4], "textureOffset": [0, 16]}
+				{
+					"coordinates": [0, 0, -1.5, 4, 12, 3],
+					"uvNorth": [4, 20, 8, 32],
+					"uvEast": [0, 20, 4, 32],
+					"uvSouth": [12, 20, 16, 32],
+					"uvWest": [8, 20, 12, 32],
+					"uvUp": [8, 20, 4, 16],
+					"uvDown": [12, 16, 8, 20]
+				}
 			],
 			"submodels": [
 				{
 					"id": "right_leg_layer",
 					"invertAxis": "xy",
-					"translate": [1.9, 12, 0],
+					"translate": [1.9, 12, 0.5],
 					"boxes": [
-						{"coordinates": [-1.9, -12, -2, 4, 12, 4], "textureOffset": [0, 32], "sizeAdd": 0.25}
+						{
+							"coordinates": [-1.9, -12, -2, 4, 12, 3],
+							"uvNorth": [4, 36, 8, 48],
+							"uvEast": [0, 36, 4, 48],
+							"uvSouth": [12, 36, 16, 48],
+							"uvWest": [8, 36, 12, 48],
+							"uvUp": [8, 36, 4, 32],
+							"uvDown": [12, 32, 8, 36],
+							"sizeAdd": 0.25
+						}
 					]
 				}
 			]
